@@ -1,11 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en " data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rinterio</title>
+    <!-- tailwind Css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisy ui  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- custom class -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+              yellowGreen: '#ABEF5F',
+            }
+          }
+        }
+      }
+    </script>
+
+    <style>
+        
+        .manrope{
+          font-family: "Manrope", sans-serif;
+          font-optical-sizing: auto;
+        }
+    </style>
 </head>
-<body>
+<body class="font-family">
+    <header>
+        <div class=" navbar bg-base-100 flex justify-around" >
+            <div class="">
+              
+              <a class="btn btn-ghost text-3xl"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 bg-yellowGreen p-1 rounded-full">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+              </svg>
+              Rinterio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li class="font-bold"><a>Home</a></li>
+                <li class="text-gray-400"><a >Services</a></li>
+                <li class="text-gray-400"><a>Portfolio</a></li>
+                <li class="text-gray-400"><a>Blogs</a></li>
+                <li class="text-gray-400"><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <div>
+
+            </div>
+            <div class=" lg:block hidden">
+              <a class="btn bg-yellowGreen font-bold rounded-full text-xl">
+                Book Consult 
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 bg-black rounded-xl text-white p-1">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+              </svg>
+              </a>
+              
+            </div>
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn bg-gray-50 rounded-full  lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li class="font-medium text-5xl"><a>Home</a></li>
+                  <li class="text-gray-400"><a >Services</a></li>
+                  <li class="text-gray-400"><a>Portfolio</a></li>
+                  <li class="text-gray-400"><a>Blogs</a></li>
+                  <li class="text-gray-400"><a>Contact Us</a></li>
+                </ul>
+              </div>
+          </div>
+          <!--  -->
+    </header>
     
 </body>
 </html>
